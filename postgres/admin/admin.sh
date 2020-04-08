@@ -5,7 +5,7 @@ set -ef -o pipefail
 function print_help_and_exit() {
   [ "$1" ] && echo "$1"
   [ "$1" ] && echo ""
-  echo "Run admin tasks on a Postgres database. Uses existing environment variables (\$PGUSER, PGPASSWORD, PGDATABASE, PGHOST, PGPORT) to connect to Postgres."
+  echo "Run admin tasks on a Postgres database. Uses existing environment variables (\$PGUSER, \$PGPASSWORD, \$PGDATABASE, \$PGHOST, \$PGPORT) to connect to Postgres."
   echo ""
   echo " $0 -p <task name - one of vacuum, vacuumanalyse or analyse> -t <table name (optional)> -v <run command with verbose option switched on, default is off>"
   echo ""
